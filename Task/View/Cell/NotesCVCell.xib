@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NotesCVCell" customModule="Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="209" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="209" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vz9-gI-5lc">
+                        <rect key="frame" x="0.0" y="0.0" width="209" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="NqZ-Q1-gsA">
+                                <rect key="frame" x="0.0" y="0.0" width="209" height="180"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIR-UF-PMC">
+                                <rect key="frame" x="0.0" y="0.0" width="209" height="180"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eDt-RD-XOp">
+                                    <rect key="frame" x="0.0" y="0.0" width="209" height="180"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to review 50+ notes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="im7-hN-zH6">
+                                <rect key="frame" x="16" y="155" width="185" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MI-bf-n5f">
+                                <rect key="frame" x="16" y="119.33333333333333" width="185" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NqZ-Q1-gsA" firstAttribute="leading" secondItem="vz9-gI-5lc" secondAttribute="leading" id="0gn-x5-niO"/>
+                            <constraint firstAttribute="trailing" secondItem="im7-hN-zH6" secondAttribute="trailing" constant="8" id="0na-4A-5t1"/>
+                            <constraint firstAttribute="trailing" secondItem="cIR-UF-PMC" secondAttribute="trailing" id="2Qu-1m-8G8"/>
+                            <constraint firstItem="cIR-UF-PMC" firstAttribute="top" secondItem="vz9-gI-5lc" secondAttribute="top" id="3UQ-Oi-oTa"/>
+                            <constraint firstAttribute="trailing" secondItem="NqZ-Q1-gsA" secondAttribute="trailing" id="Ee6-8N-Cc9"/>
+                            <constraint firstItem="im7-hN-zH6" firstAttribute="leading" secondItem="vz9-gI-5lc" secondAttribute="leading" constant="16" id="S1s-dl-tDJ"/>
+                            <constraint firstAttribute="bottom" secondItem="im7-hN-zH6" secondAttribute="bottom" constant="8" id="SbK-RS-Ql5"/>
+                            <constraint firstItem="NqZ-Q1-gsA" firstAttribute="top" secondItem="vz9-gI-5lc" secondAttribute="top" id="V86-OJ-s1s"/>
+                            <constraint firstItem="3MI-bf-n5f" firstAttribute="leading" secondItem="vz9-gI-5lc" secondAttribute="leading" constant="16" id="VKe-EB-w4r"/>
+                            <constraint firstAttribute="bottom" secondItem="cIR-UF-PMC" secondAttribute="bottom" id="VNy-G3-Ccb"/>
+                            <constraint firstItem="cIR-UF-PMC" firstAttribute="leading" secondItem="vz9-gI-5lc" secondAttribute="leading" id="YxK-4b-TUY"/>
+                            <constraint firstAttribute="bottom" secondItem="NqZ-Q1-gsA" secondAttribute="bottom" id="dpD-Q7-Fty"/>
+                            <constraint firstAttribute="bottom" secondItem="3MI-bf-n5f" secondAttribute="bottom" constant="33" id="kfr-08-V2E"/>
+                            <constraint firstAttribute="trailing" secondItem="3MI-bf-n5f" secondAttribute="trailing" constant="8" id="p1O-o9-vhS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vz9-gI-5lc" secondAttribute="bottom" id="SrN-7Q-Ov3"/>
+                <constraint firstAttribute="trailing" secondItem="vz9-gI-5lc" secondAttribute="trailing" id="Zju-oa-aFj"/>
+                <constraint firstItem="vz9-gI-5lc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kRI-Ry-PZY"/>
+                <constraint firstItem="vz9-gI-5lc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wdi-iQ-Udk"/>
+            </constraints>
+            <size key="customSize" width="209" height="180"/>
+            <connections>
+                <outlet property="baseView" destination="vz9-gI-5lc" id="Kdv-h5-Nv8"/>
+                <outlet property="imageView" destination="NqZ-Q1-gsA" id="5Fg-4A-zgS"/>
+                <outlet property="lblInfo" destination="im7-hN-zH6" id="i9g-dv-ENw"/>
+                <outlet property="lblProfileBottomConstraint" destination="kfr-08-V2E" id="5Ph-9X-Y9M"/>
+                <outlet property="lblProfileName" destination="3MI-bf-n5f" id="CF3-bY-3aR"/>
+                <outlet property="visualEffectView" destination="cIR-UF-PMC" id="29F-zb-UYd"/>
+            </connections>
+            <point key="canvasLocation" x="251.14503816793894" y="34.507042253521128"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="114.66666412353516" height="114.66666412353516"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
